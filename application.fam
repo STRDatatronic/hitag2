@@ -1,0 +1,21 @@
+App(
+    appid="hitag2",
+    name="Hitag2 Reader",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="hitag2_app",
+    requires=[
+        "storage",
+        "gui",
+    ],
+    stack_size=4 * 1024,
+    order=30,
+    fap_icon="125_10px.png",
+    fap_category="Tools",
+    fap_libs=["mbedtls"],
+    fap_private_libs=[
+        Lib(
+            name="loclass",
+        ),
+    ],
+    fap_icon_assets="icons",
+)
