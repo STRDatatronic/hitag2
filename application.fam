@@ -14,7 +14,6 @@ App(
     fap_libs=["mbedtls"],
     fap_private_libs=[
         Lib(
-            name="loclass",
         ),
     ],
     fap_icon_assets="icons",
